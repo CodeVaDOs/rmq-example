@@ -1,0 +1,10 @@
+version: '3'
+services:
+  rabbitmq:
+    image: rabbitmq:3.9-management
+    ports:
+      - "5672:5672"  # порт для AMQP
+      - "15672:15672" # порт для RabbitMQ Management UI
+    environment:
+      RABBITMQ_DEFAULT_USER: a
+      RABBITMQ_DEFAULT_PASS: a
